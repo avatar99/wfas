@@ -1,13 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "%"
-var adminprefix = "%"
+var prefix = "A"
+var adminprefix = "A"
 
 
 //bc
 
 client.on("message", message => {
-    if (message.content.startsWith("$obc")) {
+    if (message.content.startsWith("$ofwafwafwfabc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
@@ -23,7 +23,7 @@ client.on("message", message => {
 //bc online
 
 
-  var prefix = "%";
+  var prefix = "A";
 
   client.on("message", message => {
   
@@ -41,7 +41,7 @@ client.on("message", message => {
 
 client.on('message', message => {
     var  user = message.mentions.users.first() || message.author;
-if (message.content.startsWith("$avatar")) {
+if (message.content.startsWith("$avfwafwafwafwafatar")) {
 message.channel.send(`This avatar For ${user} link : ${user.avatarURL}`);
 }
 });
@@ -50,7 +50,7 @@ message.channel.send(`This avatar For ${user} link : ${user.avatarURL}`);
   client.on('message', message => {
     if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('$adminbc')){
+if (message.content.startsWith('$admifwafwafwafnbc')){
 if(!message.author.id === '600369127907131412') return;
 message.channel.sendMessage('**سيتم إرسال هذه الرسالة || :white_check_mark:**')
 client.users.forEach(m =>{
